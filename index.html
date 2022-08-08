@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cheat Sheet</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="titleline">
+                <h1 class="title">HTML</h1>
+                <h2 class="subtitle">Cheat Sheet</h2>
+            </div>
+                <nav>
+                    <ul>
+                        <li><a href="#basic_html">HTML Basics</a></li>
+                        <li><a href="#table_html">HTML Tables</a></li>
+                        <li><a href="#idk">idk</a></li>
+                    </ul>
+                </nav>
+        </div>
+    </header>
+    <main>
+        <section>
+            <p class="info"><marquee direction="left">It can be hard to remember everything that you have learned at first. That's why I have compiled my notes into cheat sheet. Hopefully, it can help you along the way!</marquee></p>
+        </section>
+
+        <table id="basic_html">
+            <thead>
+                <tr><th scope="col" colspan="4">Basic HTML</th></tr>
+            </thead>
+            <tbody>
+                <tr class="top">
+                    <td>Name</td>
+                    <td>Syntax</td>
+                    <td>Purpose</td>
+                </tr>
+                <tr class="aa"> 
+                    <td class="name">Opening</td>
+                    <td> &lt;!DOCTYPE HTML&gt;</td>
+                    <td class="purp">Used in the begining of an HTML document to let the browser know what language is being used</td>
+                </tr>
+                <tr class="bb"> 
+                    <td class="name">Making a comment</td>
+                    <td>&lt;!- - Comment - -&gt;</td>
+                    <td class="purp">This will not be coded. Instead, it can be used to write a note to whoever is reading the code</td>
+                </tr>
+                <tr class="aa">
+                    <td class="name">Title</td>
+                    <td>
+                        &lt;Head&gt;
+                        &lt;Title&gt;Hello&lt;/Title&gt;
+                        &lt;/Head&gt;
+                    </td>
+                    <td class="purp">Used to put a title in the tab on the browser.</td>
+                </tr>
+                <tr class="bb"> 
+                    <td class="name">Link</td>
+                    <td>&lt;a href=“url”&gt;Link text&lt;/a&gt;</td>
+                    <td class="purp">Used to put a link on a page</td>
+                </tr>
+                <tr class="aa"> 
+                    <td class="name">Link to same page</td>
+                    <td>&lt;a href=“#IDtag”&gt;Link text&lt;/a&gt;</td>
+                    <td class="purp">Used to link to a specific area on a the same page</td>
+                </tr>
+                <tr class="bb"> 
+                    <td class="name">Image, w/description</td>
+                    <td>&lt;img src=“url” alt=“Image description” &gt;</td>
+                    <td class="purp">Used to put an image on a site. The alt tag allows screen readers to identify the image</td>
+                </tr>
+                <tr class="aa">
+                    <td class="name">Image Link</td>
+                    <td>&lt;a href=“url”&gt; &lt;mg src=“img url”&gt; &lt;/a&gt;</td>
+                    <td class="purp">Used to make an image a link</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <table id="table_html">
+            <thead>
+                <tr><th scope="col" colspan="4">HTML Tables</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="top">
+                    <td>Name</td>
+                    <td>Syntax</td>
+                    <td>Purpose</td>
+                </tr>
+                <tr class="aa">
+                    <td class="name">Table Base</td>
+                    <td>&lt;table&gt;<br>
+                        &lt;tr&gt;&lt;tr&gt; <br>
+                        &lt;/table&gt; </td> 
+                    <td>This sets up the base of the table. Each &lt;tr&gt;, Table row, creates a row in the table. The &lt;table&gt; and &lt;tr&gt; are required. </td>
+                </tr>
+                <tr class="bb">
+                    <td class="name">Table Data</td>
+                    <td>&lt;table&gt;<br>
+                        &lt;td&gt;This in info in a sinlge column <br>&lt;/td&gt;<br>
+                        &lt;/table&gt;</td>
+                    <td>This is what holds the information in your table. This also determines the number of columns in the row.</td>
+                </tr>
+                <tr class="aa">
+                    <td class="name">Table Heading</td>
+                    <td>&lt;table&gt;<br>
+                        &lt;tr&gt;<br>
+                        &lt;th&gt;<br>
+                        &lt;/th&gt;<br>
+                        &lt;/tr&gt;<br>
+                        &lt;/table&gt;<br></td>
+                    <td>Use &lt;th&gt; instead of &lt;td&gt; for headings on the table. Include scope="row/col" todesignate which it is heading.</td>
+                </tr>
+                <tr class="bb">
+                    <td class="name">Colspan/Rowspan</td>
+                    <td>coslpan="2"</td>
+                    <td>Makes a cell go across multiple row or comments depending on how it is tagged.</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <section id="idk">
+            <p>work in progress...</p>
+        </section>
+    </main>
+    <footer>
+        <h3>© Cristian Secrieru - 2022</h3>
+    </footer>
+</body>
+</html>
